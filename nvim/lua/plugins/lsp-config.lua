@@ -24,6 +24,7 @@ return {
       ts_ls = {},
       tailwindcss = {},
       rust_analyzer = {},
+      csharp_ls = {},
     }
 
     for server, config in pairs(servers) do
