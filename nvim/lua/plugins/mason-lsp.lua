@@ -14,6 +14,7 @@ return {
         "ts_ls",
         "tailwindcss",
         "rust_analyzer",
+        "hls",
       },
       automatic_installation = true,
     })
