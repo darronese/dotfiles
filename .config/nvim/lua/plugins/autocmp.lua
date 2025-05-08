@@ -16,6 +16,14 @@ return {
     cmp.setup({
       snippet = {
         expand = function(args)
+          local ft = vim.bo.filetype
+          if ft == "svelte"
+            or ft == "js"
+            or ft == "ts"
+            or vim.b.disable_snippets
+          then 
+            return
+          end
           luasnip.lsp_expand(args.body)
         end,
       },
@@ -28,7 +36,6 @@ return {
       }),
       sources = {
         { name = "nvim_lsp" },
-        { name = "luasnip" },
         { name = "path" },
       },
     })
