@@ -11,8 +11,6 @@ return {
         json = { "prettier" },
         html = { "prettier" },
         css = { "prettier" },
-        cpp = { "clang-format" },
-        c = { "clang-format" },
         cmake = { "cmake_format" },
       },
     })
